@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David.J.Ndegwah</title>
+    <link rel="stylesheet" href="david.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <h2>David.j.Ndegwah</h2>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            
+        </div>
+        <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Books</a></li> 
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Portifolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="header"><div class="wrapper">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="76729645-cae8-4956-a6a0-77e08f8f07d1.jpeg" alt="">
+                <h2>David.J.Ndegwah</h2>
+            </div>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Books</a></li> 
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Portifolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="socialmedia">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                
+            </div>
+        </div>
+        <div class="hero-content">
+            <h4>Welcome</h4>
+            <h1>I'm <span class="imput"></span></h1>
+            <h4>Based in Boston, Washington DC.</h4>
+            <a href="#" class="btn">These Are My Works</a>
+        </div>
+    </div></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var typed=new Typed(".imput",{
+            strings:["David.J.Ndegwah", "Alive Because of the Love of God","Senior Lecturer"],
+            typeSpeed:65,
+            backSpeed:55,
+            loop:true
+        })
+        let menuicon=document.querySelector(".menu-icon");
+        let navbar=document.querySelector(".navbar");
+        let icon=document.querySelector(".menu-icon i");
+        menuicon.addEventListener("click",function(){
+navbar.classList.toggle("open");
+if(icon.classList.contains("fa-bars")){
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark");
+}else{
+    icon.classList.remove("fa-xmark");
+    icon.classList.add("fa-bars");
+}
+        })
+    </script>
+</body>
+</html>
